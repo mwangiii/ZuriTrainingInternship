@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: flex-start; /* Change to align items to the top */
     height: 100vh; /* Make the container fill the viewport height */
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Style for the phone-shaped grid container */
@@ -19,29 +20,31 @@ body {
 }
 
 /* Style for the profile image to fit in the phone-shaped grid */
-.profilePic {
+.phone-container .profilePic {
     width: 80%;
     height: 200px;
     align-self: flex-start; 
 }
 
 /* Style for the grid layout */
-.info-grid {
+.phone-container .info-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
     gap: 5px;
     max-width: 10px;
     margin: auto; 
+    max-width: 100%;
 }
 
 /* Style for each individual info box */
-.info-box {
+.phone-container .info-box {
     padding: 5px; /* Adjust the padding for the info boxes */
     border: 1px solid rgb(205, 241, 241); /* Add a border to the boxes */
     border-radius: 5px;
-    text-align: left; /* Align text to the left within the boxes */
-    background-color:rgb(177, 224, 224); /* Set a background color for the boxes */
+    background-color:rgb(205, 241, 241); /* Set a background color for the boxes */
     color: #000; /* Set the text color */
     font-size: large; /* Set the font size */
+    text-align: right;
     margin-bottom: 3px; /* Add margin to separate the boxes vertically */
+    max-width: 100%;
 }
