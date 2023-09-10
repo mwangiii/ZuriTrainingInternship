@@ -1,0 +1,47 @@
+/* firstTask.css */
+/* Center the phone-shaped grid container on the page using Flexbox */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Change to align items to the top */
+    height: 100vh; /* Make the container fill the viewport height */
+}
+
+/* Style for the phone-shaped grid container */
+.phone-container {
+    background-color:rgb(205, 241, 241); /* Set a background color for the "phone" shape */
+    border-radius: 30px; /* Create a circular "phone" shape */
+    width: 250px;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+}
+
+/* Style for the profile image to fit in the phone-shaped grid */
+.profilePic {
+    width: 80%;
+    height: 200px;
+    align-self: flex-start; 
+}
+
+/* Style for the grid layout */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 5px;
+    max-width: 10px;
+    margin: auto; 
+}
+
+/* Style for each individual info box */
+.info-box {
+    padding: 5px; /* Adjust the padding for the info boxes */
+    border: 1px solid rgb(205, 241, 241); /* Add a border to the boxes */
+    border-radius: 5px;
+    text-align: left; /* Align text to the left within the boxes */
+    background-color:rgb(177, 224, 224); /* Set a background color for the boxes */
+    color: #000; /* Set the text color */
+    font-size: large; /* Set the font size */
+    margin-bottom: 3px; /* Add margin to separate the boxes vertically */
+}
